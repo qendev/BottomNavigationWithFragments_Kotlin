@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity()  {
     lateinit var dashboardFragment: DashboardFragment
     lateinit var notificationsFragment: NotificationsFragment
 
-
+    //declare the bottomNavigation view
     lateinit var bottomNavigationView: BottomNavigationView
 
 
@@ -36,13 +36,17 @@ class MainActivity : AppCompatActivity()  {
        // title=resources.getString(R.string.title_home)
         loadFragment(HomeFragment())
 
+
+
+        //initialize the bottomNavigationView
         bottomNavigationView = findViewById(R.id.navigation)
 
-
+        //assign the itemSelected listener to the bottomNavigation View
         bottomNavigationView.setOnNavigationItemSelectedListener {item ->
+            //handle the switching of the different fragments in the bottomNavigation View
             when(item.itemId){
                 R.id.navigation_home-> {
-                    title=resources.getString(R.string.title_home)
+                    title =resources.getString(R.string.title_home)
                     loadFragment(HomeFragment())
                     return@setOnNavigationItemSelectedListener true
                 }
