@@ -32,8 +32,8 @@ class MainActivity : AppCompatActivity()  {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
-       // title=resources.getString(R.string.title_home)
+        //code diplaying the default fragment which is HomeFragment
+        title=resources.getString(R.string.title_home)
         loadFragment(HomeFragment())
 
 
