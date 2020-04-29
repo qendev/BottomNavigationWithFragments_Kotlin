@@ -12,6 +12,6 @@
         android:gravity="center"
         android:fontFamily="sans-serif-condensed-medium"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:text="Notifications Fragment" />
+        android:text="@string/notifications_fragment" />
 
 </RelativeLayout>
